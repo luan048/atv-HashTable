@@ -1,3 +1,4 @@
+// Cliente terá id e name, e será convertido em String
 public class Cliente {
     int id;
     String name;

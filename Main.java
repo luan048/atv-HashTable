@@ -4,7 +4,7 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         int operador = 10;
-        Map<Integer, HashFunction> hashTables = new HashMap<>();
+        Map<Integer, HashFunction> hashTables = new HashMap<>(); // Dinamica
 
         // Criando clientes com identificador único
         Cliente cliente1 = new Cliente(4, "Luan");

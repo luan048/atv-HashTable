@@ -2,6 +2,7 @@ class HashFunction {
     int operador;
     Lista[] vetor;
 
+    // Define tamanho do vetor
     HashFunction(int operador) {
         this.operador = operador;
         vetor = new Lista[operador];
@@ -11,11 +12,13 @@ class HashFunction {
         }
     }
 
+    // Insere na lista com chave definida, usando hashCode
     public void inserir(String idPedido, Cliente cliente) {
         int chave = Math.abs(idPedido.hashCode() % operador);
         vetor[chave].inserir(idPedido, cliente);
     }
 
+    // Busca elementos com chave, usando hashCode
     public Cliente buscar(String idPedido) {
         int chave = Math.abs(idPedido.hashCode() % operador);
         return vetor[chave].buscar(idPedido);

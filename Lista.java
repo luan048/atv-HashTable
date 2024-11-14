@@ -1,6 +1,8 @@
-class Lista {
+// Lista irá armazenar, funcionará como vetor
+public class Lista {
     No inicio;
 
+    // Metodo para inserir Nó na lista, com id e info do cliente
     public void inserir(String idPedido, Cliente cliente) {
         No no = new No();
         
@@ -10,6 +12,7 @@ class Lista {
         inicio = no;
     }
 
+    // Metodo para buscar 1 elemento pelo seu idPedido
     public Cliente buscar(String idPedido) {
         No no = inicio;
         
@@ -22,6 +25,7 @@ class Lista {
         return null;
     }
 
+    // Converte para String
     public String toString() {
         StringBuilder sb = new StringBuilder();
         No no = inicio;

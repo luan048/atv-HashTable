@@ -1,4 +1,4 @@
-class No {
+public class No {
     String idPedido;
     Cliente info;
     No proximo;
